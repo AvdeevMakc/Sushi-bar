@@ -1,0 +1,50 @@
+[
+    {
+        "id": "01",
+        "title": "Денвер",
+        "itemsInBox": 6,
+        "weight": 290,
+        "price": 230,
+        "imgSrc": "Denver.png"
+    },
+    {
+        "id": "02",
+        "title": "Маямi",
+        "itemsInBox": 6,
+        "weight": 320,
+        "price": 280,
+        "imgSrc": "Maimy.png"
+    },
+    {
+        "id": "03",
+        "title": "Татамi",
+        "itemsInBox": 6,
+        "weight": 280,
+        "price": 225,
+        "imgSrc": "Tatamy.png"
+    },
+    {
+        "id": "04",
+        "title": "Футомакі з вугрем",
+        "itemsInBox": 6,
+        "weight": 270,
+        "price": 250,
+        "imgSrc": "Fotomaki with ugor.png"
+    },
+    {
+        "id": "05",
+        "title": "Футомакі з крабовою мішанкою",
+        "itemsInBox": 6,
+        "weight": 290,
+        "price": 195,
+        "imgSrc": "Fotomaki with krab.png"
+    },
+    {
+        "id": "06",
+        "title": "Футомакі з лососем",
+        "itemsInBox": 6,
+        "weight": 265,
+        "price": 225,
+        "imgSrc": "Fotomaki with losos.png"
+    }
+]

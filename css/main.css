@@ -1,0 +1,397 @@
+body {
+
+	background: url(../img/logo/wooden-textured-background.webp);
+	background-size: cover;
+
+	height: 100%;
+	font-family: 'Merriweather', serif;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.wrapper {
+	max-width: 1920px;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* ==============HEADER================ */
+
+.header {
+	padding: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	border-bottom: 1px solid #EB5A1E;
+}
+
+.header__logo img {
+	width: 50px;
+}
+
+.header__title {
+	text-transform: uppercase;
+}
+
+/* ----------------MENU-------------- */
+
+.nav {
+	margin-right: 100px;
+}
+
+.nav__menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav__menu-item {
+	color: #000;
+}
+
+.menu__item {
+	margin-left: 30px;
+	background: #f3eeee;
+	padding: 10px 20px;
+	border-radius: 15px;
+}
+
+.item:hover {
+	color: #fff;
+	background-color: #EB5A1E;
+}
+
+/* ==================MAIN================== */
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.main__container {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+
+	border-bottom: 1px solid #EB5A1E;
+}
+
+.wrapper__products {
+	flex: 1 1 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* ==============card================= */
+
+.card {
+	border: 1px solid red;
+	margin: 0 20px 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 270px;
+	overflow: hidden;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 auto;
+}
+
+.product-img {
+	width: 265px;
+	height: auto;
+
+	hyphens: auto;
+	margin-bottom: 20px;
+
+	transition: 0.3s;
+}
+
+.product-img:hover {
+
+	transform: scale(1.2);
+}
+
+.item-title {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-align: center;
+	flex: 1 1 auto;
+}
+
+.item__count {
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.details-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.items {
+	background: #f3eeee;
+	border-radius: 8px;
+	width: 120px;
+	font-size: 18px;
+	overflow: hidden;
+
+	display: flex;
+}
+
+.items__control {
+	width: 40px;
+	padding: 5px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-align: center;
+}
+
+.items__control:hover {
+	background: #eb5a1e;
+	color: #FFF;
+}
+
+.items__current {
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+}
+
+.price {
+	text-align: right;
+	margin-left: 20px;
+}
+
+.price__weight {
+	color: #6c757d;
+	font-size: 80%;
+	line-height: 1;
+}
+
+.price__currency {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.btn {
+	padding: 8px 15px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #eb5a1e;
+	;
+}
+
+.btn:hover {
+	color: #FFF;
+	background-color: #eb5a1e;
+	border-color: #eb5a1e;
+}
+
+.btn-outline-warning:hover {
+	color: #FFF;
+	background-color: #eb5a1e;
+	border-color: #eb5a1e;
+}
+
+/* =====================Basket============== */
+
+.cart__basket {
+	border: 1px solid #EB5A1E;
+	padding: 20px;
+	height: 100%;
+}
+
+.cart__basket-body {}
+
+.cart__basket-title {
+	font-size: 20px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+.cart-item__top {
+	display: flex;
+	align-items: flex-start;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dee2e6;
+	margin-bottom: 15px;
+}
+
+.cart-item__img {}
+
+.cart-item__img img {
+	max-width: 100px;
+	height: auto;
+}
+
+.cart-item__desc {
+	padding-top: 5px;
+	padding-left: 15px;
+}
+
+.cart-item__title {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.cart-item__weight {
+	color: #6c757d;
+	font-size: 80%;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+.cart-item__details {
+	display: flex;
+	align-items: center;
+}
+
+.cart-item__details .price__currency {
+	font-size: 18px;
+	margin-left: 15px;
+}
+
+.cart-total {
+	font-size: 18px;
+	font-weight: 500;
+	border-bottom: 1px solid #6c757d;
+}
+
+.cart-total p {
+	margin-bottom: 10px;
+}
+
+.card-order {
+	margin-top: 20px;
+}
+
+.form-group {}
+
+.form-control {
+	border: 1px solid #ffffff;
+	margin-bottom: 10px;
+}
+
+.card-title {
+	margin-bottom: 20px;
+}
+
+.form-control {
+	padding: 10px;
+}
+
+.small-text {
+	font-size: 10px;
+	color: #6c757d;
+}
+
+.delivery-cost {}
+
+.free {
+	color: #0EA107;
+}
+
+.total-price {
+	color: #EB5A1E;
+}
+
+.grn {
+	color: #EB5A1E;
+}
+
+.none {
+	display: none;
+}
+
+/* ===================ABOUT-US============ */
+.about-us {
+	margin-bottom: 30px;
+}
+
+.about-us__wrapper {
+	border-bottom: 1px solid #eb5a1e;
+	margin-bottom: 50px;
+}
+
+.about-us__title {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.about-us__sushi-photos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	margin-bottom: 50px;
+
+}
+
+.about-us__info {}
+
+.info__title {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.info__contact {
+	display: flex;
+	justify-content: space-around;
+}
+
+.info__data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.info__data p {
+	margin-bottom: 30px;
+}
+
+/* ===================FOOTER========== */
+.footer {
+	background: url(../img/logo/bg\ footer.webp);
+	display: flex;
+	align-items: center;
+	justify-content: space-around
+}
+
+.footer__text {
+	font-size: 14px;
+	color: #fff;
+}
+
+.footer__menu {
+	padding: 35px;
+	color: #fff;
+	display: flex;
+}
+
+.footer__menu li {
+	margin-left: 20px;
+}

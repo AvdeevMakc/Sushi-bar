@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин роллов</title>
+
+	<link rel="stylesheet" href="./css/null.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
+		rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+			<header class="header">
+				<div class="header__logo">
+					<img src="./img/logo/logo.png" alt="logo">
+				</div>
+				<h2 class="header__title">sushi bar</h2>
+				<nav class="nav">
+					<ul class="nav__menu">
+						<li><a class="menu__item item" href="#">Головна</a></li>
+						<li><a class="menu__item item" href="#">Меню</a></li>
+						<li><a class="menu__item item" href="#">Про нас</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="main">
+				<div class="main__container">
+					<!-- товары -->
+					<div class="wrapper__products" id="productsContainer">
+					</div>
+
+					<!-- Корзина -->
+					<div class="cart__basket">
+						<div class="cart__basket-body">
+							<h5 class="cart__basket-title">Ваше замовлення</h5>
+
+							<div data-cart-empty>
+								Ваш кошик порожній
+							</div>
+							<!-- cart-wrapper -->
+							<div class="cart-wrapper"> </div>
+							<!-- // cart-wrapper -->
+
+							<!-- Стоимость заказа -->
+							<div class="cart-total">
+								<p id="delivery-cart" class="none">
+									<span>Доставка:</span>
+									<span class="delivery-cost free">Безкоштовна</span>
+								<p class="small-text">Безкоштовно при замовленнi вiд 600 грн</p>
+								</p>
+								<p>Разом: <span class="total-price">0</span> <span class="grn">₴</span></p>
+							</div>
+							<!-- // Стоимость заказа -->
+
+						</div>
+
+						<!-- Оформить заказ -->
+						<div id="order-form" class="card-order none">
+							<h5 class="card-title">Оформити замовлення</h4>
+								<form>
+									<div class="form-group">
+										<input type="phone" class="form-control" placeholder="Ваш номер телефона">
+									</div>
+									<button type="submit" class="btn">Замовити</button>
+								</form>
+						</div>
+						<!-- // Оформить заказ -->
+
+					</div>
+					<!-- // Корзина -->
+				</div>
+
+
+				<section class="about-us">
+					<div class="about-us__wrapper">
+						<div class="about-us__title">
+							<h2>Наші кухарі</h2>
+						</div>
+						<div class="about-us__sushi-photos">
+							<img src="./img/photo/01 sushi-chef.jpg" alt="sushi-chef">
+							<img src="./img/photo/02 sushi-chef.jpg" alt="sushi-chef">
+							<img src="./img/photo/03 sushi-chef.jpg" alt="sushi-chef">
+						</div>
+					</div>
+
+
+					<div class="about-us__info">
+						<div class="info__title">
+							<h2>Наші контакти</h2>
+						</div>
+						<div class="info__contact">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8895.13963522376!2d34.91598345428985!3d48.484520337253066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe12e20ad85ef%3A0xbe47540f3da8adf9!2sSushi%20Story!5e0!3m2!1sru!2sua!4v1703578150716!5m2!1sru!2sua"
+								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<div class="info__data">
+								<p>Адреса: вулиця Юрія Кондратюка, 2</p>
+								<p>Наш телефон +38066-111-11-11 </p>
+								<p>email - sushy@net.ua</p>
+								<iframe width="509" height="175" src="https://www.youtube.com/embed/zOgQgBcNeDk"
+									title="Японская реклама суши-бара" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen></iframe>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__text">Наш телефон +38066-111-11-11</div>
+				<ul class="footer__menu">
+					<li><a class="menu__item item" href="#">Головна</a> </li>
+					<li><a class="menu__item item" href="#">Меню</a> </li>
+					<li><a class="menu__item item" href="#">Про нас</a> </li>
+				</ul>
+			</footer>
+		</div>
+	</div>
+
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter.js"></script>
+	<script src="./js/cart.js"></script>
+
+</body>
+
+</html>
