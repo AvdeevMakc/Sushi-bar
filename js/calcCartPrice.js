@@ -23,7 +23,7 @@ function calcCartPrice() {
 
     if (totalPrice >= 600) {
         deliveryCost.classList.add("free");
-        deliveryCost.textContent = "бесплатно";
+        deliveryCost.textContent = "Безкоштовно";
     } else {
         deliveryCost.classList.remove("free");
         deliveryCost.textContent = "100 ₴";
