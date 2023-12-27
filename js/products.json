@@ -46,5 +46,53 @@
         "weight": 265,
         "price": 225,
         "imgSrc": "Fotomaki with losos.png"
+    },
+    {
+        "id": "07",
+        "title": "Футомакі зі смаженим лососем",
+        "itemsInBox": 6,
+        "weight": 290,
+        "price": 175,
+        "imgSrc": "Fotomaki with fried losos.png"
+    },
+    {
+        "id": "08",
+        "title": "Біг vegan",
+        "itemsInBox": 6,
+        "weight": 240,
+        "price": 114,
+        "imgSrc": "Big vegan.png"
+    },
+    {
+        "id": "09",
+        "title": "Кагосіма",
+        "itemsInBox": 6,
+        "weight": 280,
+        "price": 124,
+        "imgSrc": "Cagosima.png"
+    },
+    {
+        "id": "10",
+        "title": "Іллінойс",
+        "itemsInBox": 6,
+        "weight": 270,
+        "price": 290,
+        "imgSrc": "Illinois.png"
+    },
+    {
+        "id": "11",
+        "title": "Кіото",
+        "itemsInBox": 6,
+        "weight": 260,
+        "price": 244,
+        "imgSrc": "Kioto.png"
+    },
+    {
+        "id": "12",
+        "title": "Кофу",
+        "itemsInBox": 6,
+        "weight": 230,
+        "price": 144,
+        "imgSrc": "Kofu.png"
     }
 ]
