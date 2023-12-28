@@ -7,7 +7,9 @@
 	<title>Sushi bar</title>
 
 	<link rel="stylesheet" href="./css/null.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
 		rel="stylesheet">
@@ -33,6 +35,32 @@
 			</header>
 
 			<main class="main">
+
+				<section class="slider">
+					<div class="slider__title">
+						<h2>Увага акцiя</h2>
+					</div>
+
+					<!-- Slider main container -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<!-- <div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+
+						<!-- If we need scrollbar -->
+						<!-- <div class="swiper-scrollbar"></div> -->
+					</div>
+
+				</section>
+
 				<div class="main__container">
 					<!-- товары -->
 					<div class="wrapper__products" id="productsContainer">
@@ -129,11 +157,17 @@
 		</div>
 	</div>
 
+	<script src="./js/getSale.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
 	<script src="./js/renderProducts.js"></script>
 	<script src="./js/calcCartPrice.js"></script>
 	<script src="./js/toggleCartStatus.js"></script>
 	<script src="./js/counter.js"></script>
 	<script src="./js/cart.js"></script>
+
+	<script src="./js/slider.js"></script>
 
 </body>
 
