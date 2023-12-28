@@ -1,23 +1,42 @@
 const productsContainer = document.querySelector("#productsContainer");
+const showMore = document.querySelector(".products__more");
+let productsArray = [];
+let counterProducts = 6;
+
+showMore.addEventListener("click", function () {
+    counterProducts += 6;
+
+    document.querySelector("#productsContainer").textContent = "";
+
+    if (productsArray.length <= counterProducts) {
+        renderProducts(productsArray.length);
+        console.log("ok");
+        document.querySelector("#showMore").classList.add("none");
+    } else renderProducts(counterProducts);
+
+
+})
 
 getProducts();
 
 async function getProducts() {
     const responce = await fetch('./js/products.json');
-    const productsArray = await responce.json();
+    productsArray = await responce.json();
 
-    renderProducts(productsArray);
+    renderProducts(counterProducts);
+
+    // renderProducts(productsArray);
 }
 
-function renderProducts(productsArray) {
-    productsArray.forEach(el => {
+function renderProducts(counter) {
+    for (let i = 0; i < counter; i++) {
 
         const productHTML = `<!-- Ролл -->
-        <div class="card" data-id="${el.id}">
-            <img class="product-img" src="img/roll/${el.imgSrc}" alt="${el.title}">
+        <div class="card" data-id="${productsArray[i].id}">
+            <img class="product-img" src="img/roll/${productsArray[i].imgSrc}" alt="${productsArray[i].title}">
             <div class="card-body">
-                <p class="item-title">${el.title}</p>
-                <p data-items-in-box class="item__count">${el.itemsInBox} шт.</p>
+                <p class="item-title">${productsArray[i].title}</p>
+                <p data-items-in-box class="item__count">${productsArray[i].itemsInBox} шт.</p>
 
                 <div class="details-wrapper">
                     <div class="items counter-wrapper">
@@ -27,8 +46,8 @@ function renderProducts(productsArray) {
                     </div>
 
                     <div class="price">
-                        <div class="price__weight">${el.weight}г.</div>
-                        <div class="price__currency">${el.price} ₴</div>
+                        <div class="price__weight">${productsArray[i].weight}г.</div>
+                        <div class="price__currency">${productsArray[i].price} ₴</div>
                     </div>
                 </div>
 
@@ -40,7 +59,7 @@ function renderProducts(productsArray) {
         <!-- // Ролл -->`;
 
         productsContainer.insertAdjacentHTML("beforeend", productHTML);
-    });
+    };
 
 
 }
